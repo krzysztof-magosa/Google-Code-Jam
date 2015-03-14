@@ -18,7 +18,7 @@ if __name__ == '__main__':
     for index in range(1, n+1):
         c = int(sys.stdin.readline())
         i = int(sys.stdin.readline())
-        p = list(map(int, sys.stdin.readline().split(' ')))
+        p = [int(x) for x in sys.stdin.readline().split()]
         pair = find_pair(c, i, p)
 
         print('Case #%d: %d %d' % (index, pair[0], pair[1]))
