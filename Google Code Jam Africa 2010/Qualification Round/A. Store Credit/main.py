@@ -21,4 +21,4 @@ if __name__ == '__main__':
         p = list(map(int, sys.stdin.readline().split(' ')))
         pair = find_pair(c, i, p)
 
-        print('Case #' + str(index) + ': ' + str(pair[0]) + ' ' + str(pair[1]))
+        print('Case #%d: %d %d' % (index, pair[0], pair[1]))
