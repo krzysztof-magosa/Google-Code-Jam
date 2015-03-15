@@ -14,16 +14,16 @@ if __name__ == '__main__':
     t = int(sys.stdin.readline())
 
     for ti in range(1, t+1):
-        n, m = [int(x) for x in sys.stdin.readline().rstrip('\n').split(' ')]
+        n, m = [int(x) for x in input().split(' ')]
         
         existing = []
         for ni in range(1, n+1):
-            existing.extend(expand_nests(sys.stdin.readline().rstrip('\n')))
+            existing.extend(expand_nests(input()))
 
         created = 0
         requested = []
         for mi in range(1, m+1):
-            nests = expand_nests(sys.stdin.readline().rstrip('\n'))
+            nests = expand_nests(input())
 
             for nest in nests:
                 if nest not in existing:
